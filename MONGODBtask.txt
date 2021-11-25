@@ -58,18 +58,20 @@ title :" Avatar"
 updations:
 
 
-db.movies.updateOne({title:"The Hobbit: An Unexpected Journey"},
+db.movies.updateOne({
+title:"The Hobbit: An Unexpected Journey"},
 {$set : {"synopsis":"A reluctant hobbit, Bilbo Baggins, 
 sets out to the Lonely Mountain with a spirited group of dwarves to
- reclaim their mountain home  and the gold within it from the dragon Smaug."}})
+ reclaim their mountain home  and the gold within it from the dragon Smaug."}
+ })
 
 
 
 
 db.movies.updateOne({title:"The Hobbit: The Desolation of Smaug" },
-{"synopis": "The dwarves, along with Bilbo Baggins and Gandalf the Grey,
+($set:{"synopis": "The dwarves, along with Bilbo Baggins and Gandalf the Grey,
  continue their quest to reclaim Erebor, their homeland, from Smaug.
  Bilbo Baggins is in possession of a mysterious and magical ring."}})
 
 db.movies.updateOne({title:"pulp friction"},
-{$set:{actors:"[Samuel L. Jackson" to the movie "Pulp Fiction"]}})
+{$set:{actors:["Samuel L. Jackson","Uma travolta","john travolta"]}})
