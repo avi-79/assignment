@@ -121,8 +121,7 @@ select * from emp
   from emp
 
  /*21*/
-
- select sal,
+select sal,
    case 
    when sal >2500 then 'high'
    when sal < 1000 then 'low'
